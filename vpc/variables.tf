@@ -1,10 +1,10 @@
 #VPC-01
-variable "vpc-cidr-01" {
+variable "vpc_cidr_01" {
   type        = string
   description = "Define VPC-01 CIDC_BLOCK"
 }
 
-variable "vpc-name-01" {
+variable "vpc_name_01" {
   type        = string
   description = "Define VPC-01 Name"
 }
