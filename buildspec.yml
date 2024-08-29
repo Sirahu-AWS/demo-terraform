@@ -1,10 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    TF_VAR_vpc-cidr-01: "10.80.0.0"
-    TF_VAR_vpc-name-01: "demo-vpc-01"
-
 phases:
   install:
     commands:
@@ -20,6 +15,8 @@ phases:
       - aws configure set default.aws_access_key_id $ACCESS_KEY
       - aws configure set default.aws_secret_access_key $SECRET_KEY
       - cat ~/.aws/credentials
+      - export TF_VAR_vpc-cidr-01="10.80.0.0"
+      - export TF_VAR_vpc-name-01="demo-vpc-01"
 
   pre_build:
     commands:
