@@ -18,7 +18,7 @@ override.tf.json
 .terraform.lock.hcl
 
 # Terraform variable files
-*.tfvars
+#*.tfvars
 *.tfvars.json
 
 # Ignore any .terraform directories

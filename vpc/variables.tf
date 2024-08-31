@@ -1,10 +1,16 @@
-#VPC-01
-variable "vpc_cidr_01" {
-  type        = string
-  description = "Define VPC-01 CIDC_BLOCK"
+variable "aws_region" {
+  type = string
 }
 
-variable "vpc_name_01" {
+variable "availability_zones" {
+  type = list(string)
+}
+
+variable "cidr_block" {
   type        = string
-  description = "Define VPC-01 Name"
+  description = "VPC cidr block. Example: 10.0.0.0/16"
+}
+
+variable "vpc_name" {
+  type = string
 }
